@@ -1,0 +1,109 @@
+@import '../../style/globals';
+
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(47, 80, 179, 1) 0%, rgba(26, 67, 108, 1) 88%);
+}
+
+.form{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 1.5rem;
+    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+}
+
+.formTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $whiteTextColor ;
+}
+
+.formPoll{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+
+    label{
+        color: $whiteTextColor;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    input, textarea{
+        outline: none;
+        border: none;
+        padding: 2px 8px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    input{
+        min-height: 2rem;
+    }
+
+    textarea{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 4rem;
+        max-height: 8rem;
+    }
+}
+
+.datePoll{
+    width: fit-content !important;
+}
+
+.formPollErr{
+    min-height: 1rem;
+    color: rgb(80, 0, 0);
+}
+
+.btnWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button{
+        outline: 0;
+        border: none;
+        background-color: rgba(17, 103, 17, 0.815);
+        color: $whiteTextColor;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 8px;
+
+        &:hover{
+            background-color: rgba(49, 137, 49, 0.815);
+        }
+
+        &:disabled{
+            background-color: grey;
+            color: rgb(56, 56, 56);
+            cursor: default;
+        }
+    }
+}
+
+.formMessage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $whiteTextColor;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-height: 1rem;
+}
